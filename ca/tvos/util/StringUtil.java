@@ -43,7 +43,7 @@ public final class /* static */ StringUtil {
 	 * 
 	 * @throws IndexOutOfBoundsException if passed an invalid array index.
 	 */
-	public static String[] concat(String[] lhs, String[] rhs) {
+	public static String[] concat(String[] lhs, String... rhs) {
 		return concat(lhs, 0, lhs.length, rhs, 0, rhs.length);
 	}
 

@@ -9,7 +9,6 @@ import ca.tvos.util.StringUtil;
  * Simple application framework class with command line argument handling.
  * 
  * @author Peter J. Grey
- * (c) 2023
  */
 public abstract class Application implements Runnable {
 

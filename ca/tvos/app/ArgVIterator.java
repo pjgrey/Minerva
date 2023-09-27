@@ -4,9 +4,10 @@
 package ca.tvos.app;
 
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 /**
- * 
+ * @author Peter J. Grey
  */
 /*package*/ class ArgVIterator implements Iterator<String> {
 
@@ -23,7 +24,9 @@ import java.util.Iterator;
 
 	@Override
 	public String next() {
-		return underlying.nextArg();
+		String n = underlying.nextArg();
+		if( n == null ) throw new NoSuchElementException();
+		return n; 
 	}
 
 }

@@ -6,7 +6,7 @@ package ca.tvos.app;
 import java.util.Iterator;
 
 /**
- * 
+ * @author Peter J. Grey
  */
 public interface ArgV extends Iterable<String> {
 
